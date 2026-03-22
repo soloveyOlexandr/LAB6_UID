@@ -1,0 +1,17 @@
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 24px 0;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  transition: border-color var(--transition), color var(--transition);
+}
+
+.footer a {
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

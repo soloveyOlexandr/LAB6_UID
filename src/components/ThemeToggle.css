@@ -1,0 +1,26 @@
+.theme-toggle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--accent-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transition), transform var(--transition);
+}
+
+.theme-toggle:hover {
+  background: var(--accent);
+  transform: rotate(20deg);
+}
+
+.theme-toggle:hover svg {
+  color: white;
+}
+
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+  color: var(--accent);
+  transition: color var(--transition);
+}

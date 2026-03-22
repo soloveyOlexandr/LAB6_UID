@@ -1,0 +1,50 @@
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 640px;
+}
+
+.step {
+  display: flex;
+  gap: 20px;
+  padding: 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: background-color var(--transition), border-color var(--transition), transform var(--transition);
+}
+
+.step:hover {
+  transform: translateX(4px);
+}
+
+.step-number {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  border-radius: 50%;
+  background: var(--gradient);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.step h3 {
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+
+.step p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .step {
+    padding: 16px;
+  }
+}
