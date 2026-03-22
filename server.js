@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// ── Get video info (all platforms via yt-dlp) ──
+//Get video info (all platforms via yt-dlp)
 app.post('/api/info', async (req, res) => {
   const { url } = req.body;
 
@@ -76,7 +76,7 @@ app.post('/api/info', async (req, res) => {
   }
 });
 
-// ── Download video (all platforms via yt-dlp) ──
+//Download video (all platforms via yt-dlp)
 app.get('/api/download', async (req, res) => {
   const { url, format } = req.query;
 
